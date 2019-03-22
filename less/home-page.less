@@ -82,3 +82,43 @@
 }
 
 // home
+
+// Media Query
+@media @mobile {
+
+  .home {
+    padding: 0 1.5em;
+
+    .content-section {
+      flex-direction: column;
+
+      .text-content,
+      .img-content {
+        width: 100%;
+        padding: 0;
+      }
+      .img-content img {
+        width: 100%;
+      }
+    }
+
+    .inverse-content {
+      flex-direction: column-reverse;
+    }
+    .content-destination {
+      width: 100%;
+    }
+    .content-pick {
+      flex-direction: column;
+
+      .destination {
+        width: 85%;
+        margin: 0 auto 30px;
+
+        .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

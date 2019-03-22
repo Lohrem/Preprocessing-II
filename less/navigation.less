@@ -10,11 +10,21 @@ header {
   nav {
     display: flex;
   }
-  
+
   .links {
-    font-size: 20px;
+    font-size: 2em;
     color: @shark;
     text-decoration: none;
     margin: auto 7px;
+  }
+}
+@media @mobile {
+  header {
+    flex-direction: column;
+    text-align: center;
+
+    nav {
+      justify-content: center;
+    }
   }
 }
